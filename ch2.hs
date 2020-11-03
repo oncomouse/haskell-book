@@ -4,7 +4,7 @@ sayHello :: String -> IO ()
 sayHello x = putStrLn ("Hello, " ++ x ++ "!")
 
 main :: IO ()
-main = sayHello ("Andrew")
+main = sayHello "Andrew"
 
 triple :: Int -> Int
 triple x = x * 3
