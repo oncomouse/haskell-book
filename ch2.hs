@@ -9,11 +9,14 @@ main = sayHello "Andrew"
 triple :: Int -> Int
 triple x = x * 3
 
+piRSquared :: Floating a => a -> a
 piRSquared x = pi * x * x
 
+foo :: Num a => a -> a
 foo x = let y = x * 2
             z = x * 5 in 2 * z * y
 
+mult1 :: Integer
 mult1 = x * y
   where
     x = 5
@@ -21,6 +24,7 @@ mult1 = x * y
     y = 6
 
 -- let x = 3; y = 1000 in x * 3 + y
+firstEx :: Integer
 firstEx = x * 3 + y
   where
     x = 3
