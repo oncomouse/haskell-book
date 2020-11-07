@@ -1,5 +1,6 @@
 module Truth where
 
+test :: [Char]
 test = if True then t else f
   where t = "Truthin'"
         f = "Falsin'"
